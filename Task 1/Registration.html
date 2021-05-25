@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+
+<title>Registartion</title>
+<style>
+	body{
+		background-image: url('bg2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.topnav{
+		background-color: black;
+	}
+	.topnav a{
+		color: aliceblue;
+		padding: 11px 33px;
+        font-size: 19px;
+		text-decoration: none;
+	}
+	.topnav a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: greenyellow;
+    }
+	
+</style>
+<body>
+    <div class="topnav">
+        <a class="active" href="/Home.html">Home</a>
+        <a href="/About.html">About</a>
+        <a href="/Registration.html">Registration</a>
+        <!-- <a href="/Contact.html">Contact</a> -->
+    </div>
+
+	<form action="Registration.html">
+        <label for="name">Name:-</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="Role">Role:-</label>
+        <div>
+            <input type="text" name="myRole" id="Role">
+        </div>
+        <br>
+        <label for="email">Email:-</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <label for="date">Date:-</label>
+        <div>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br><label for="age">Age:-</label>
+        <div>
+            <input type="number" name="myAge" id="age">
+        </div>
+        <br><label for="eligible">Are You Eligible ?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" checked id="eligible">
+        </div>
+        <br><label for="info">Information:-</label>
+        <div>
+            <br> <textarea name="myInfo" cols="70" rows="5" id="info"></textarea>
+        </div>
+        <br>
+        <label for="experience">Experience:-</label>
+        <div>
+            <select name="myexperinece" id="experience">
+                <option value="Experienced" selected> Experienced</option>
+                <option value="InExperienced">InExperienced</option>
+            </select>
+        </div>
+        <br><label for="gender">Gender:-</label>
+        <div>
+            Male <input type="radio" name="mygender" id="gender"> Female <input type="radio" name="mygender"
+                id="gender"> Other <input type="radio" name="mygender" id="gender">
+        </div>
+        <br>
+       
+        <button class="btn">Submit</button>
+        <button class="btn">Reset</button>
+    </form>
+	
+
+	
+</body>
+</html>
